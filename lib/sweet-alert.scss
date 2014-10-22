@@ -2,10 +2,29 @@
 // 2014 (c) - Tristan Edwards
 // github.com/t4t5/sweetalert
 
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300); // Open Sans font
+// @import url(//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300); // Open Sans font
+
+// COLORS
+
+// $blue: #29A1D3;
+// $blue2: #248EBA;
+// $yellow: #EFAF17;
+// $yellow2: #D39A14;
+// $orange: #ED4D0F;
+// $orange2: #D1440D;
+// $green: #89B71B;
+// $green2: #79A118;
+// $cream: #E5DFD5;
+// $cream2: #CAC5BC;
+// $lgray: #515763;
+// $mgray: #2E3138;
+// $dgray: #23252B;
+// $sdgray: #191A1E;
+
+$llgray: lighten($lgray, 20);
 
 .sweet-overlay {
-	background-color: rgba(black, 0.4);
+	background-color: rgba(black, 0.5);
 
 	position: fixed;
 	left: 0;
@@ -21,8 +40,8 @@
 	$width: 478px;
 	$padding: 17px;
 
-	background-color: white;
-	font-family: 'Open Sans', sans-serif;
+	background-color: #2E3138;
+	// font-family: 'Open Sans', sans-serif;
 	width: $width;
 	padding: $padding;
 	border-radius: 5px;
@@ -38,6 +57,8 @@
 	display: none;
 	z-index: 2000;
 
+	box-shadow: 0 0 20px black;
+
 	@media all and (max-width: 540px) {
 		width: auto;
 		margin-left: 0;
@@ -48,7 +69,7 @@
 	}
 
 	h2 {
-		color: #575757;
+		color: #CAC5BC;
 		font-size: 30px;
 		text-align: center;
 		font-weight: 600;
@@ -57,8 +78,8 @@
 	}
 
 	p {
-		color: #797979;
-		font-size: 16px;
+		color: #CAC5BC;
+		font-size: 1rem;
 		text-align: center;
 		font-weight: 300;
 		position: relative;
@@ -67,16 +88,16 @@
 	}
 
 	button {
-		$btnBlue: #AEDEF4;
+		$btnBlue: #29A1D3;
 		$btnGray: #D0D0D0;
 
 		background-color: $btnBlue;
 		color: white;
 		border: none;
 		box-shadow: none;
-		font-size: 17px;
+		font-size: 1rem;
 		font-weight: 500;
-		border-radius: 5px;
+		border-radius: 4px;
 		padding: 10px 32px;
 		margin: 26px 5px 0 5px;
 		cursor: pointer;
@@ -221,7 +242,7 @@
 				left: -33px;
 
 			   -webkit-transform: rotate(-45deg);
-			  transform: rotate(-45deg);		
+			  transform: rotate(-45deg);
 				-webkit-transform-origin: 60px 60px;
 			  transform-origin: 60px 60px;
 			}
@@ -274,7 +295,7 @@
 
 				&.tip {
 					width: 25px;
-					
+
     			left: 14px;
 					top: 46px;
 
@@ -283,7 +304,7 @@
 				}
 				&.long {
 					width: 47px;
-					
+
     			right: 8px;
 					top: 38px;
 
